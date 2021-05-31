@@ -1,19 +1,17 @@
-package com.pratice.springboot.SpingBootBasic;
+package com.pratice.springboot.spingBootBasic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.pratice.springboot.service.LoginService;
+import com.pratice.springboot.web.service.LoginService;
 
 @Controller
-@Component
-@ComponentScan("com.pratice.springboot.service")
+@ComponentScan("com.pratice.springboot")
 public class LoginController {
 	
 	@Autowired

@@ -1,12 +1,11 @@
-package com.pratice.springboot.service;
+package com.pratice.springboot.web.service;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class LoginService {
 
 	public boolean validate(String userid, String password) {
 		return userid.equalsIgnoreCase("venkat") && password.equalsIgnoreCase("password");
 	}
-
 }
