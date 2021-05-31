@@ -33,7 +33,7 @@ public class TodoService {
 
 	}
 
-	public void addTodos(int id, String user, String desc, Date targetDate, boolean isDone) {
+	public void addTodos(String user, String desc, Date targetDate, boolean isDone) {
 
 		todos.add(new Todos(++count, user, desc, targetDate, isDone));
 	}
